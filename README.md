@@ -10,7 +10,7 @@
 - Additional SDKs or libraries may be required
 
 ## License & Liability
-For educational and research purposes only.  
+This leak of the Counter-Strike: Global Offensive code is available for educational and research purposes only.  
 Not authorized for commercial use or redistribution.  
 Provided “as is,” without warranty of any kind, express or implied.  
 Use at your own risk; you assume all responsibility for compliance with any applicable laws or third-party terms.  
