@@ -1,0 +1,52 @@
+From 6f22ce66fd030e6edeff3f29e8286958d669fbc5 Mon Sep 17 00:00:00 2001
+From: Anon302 &lt;anongitlab302@protonmail.com&gt;
+Date: Sat, 25 Apr 2020 03:40:09 +0200
+Subject: [PATCH] Fixes
+
+---
+ dx9sdk/include/ks.h                       | 2 +-
+ game/shared/baseachievement.cpp           | 2 +-
+ game/shared/cstrike15/achievements_cs.cpp | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/dx9sdk/include/ks.h b/dx9sdk/include/ks.h
+index 4f766b9..740c8ac 100644
+--- a/dx9sdk/include/ks.h
++++ b/dx9sdk/include/ks.h
+@@ -35,7 +35,7 @@ Abstract:
+ #endif // !defined(SIZEOF_ARRAY)
+ 
+ #if defined(__cplusplus) &amp;&amp; _MSC_VER &gt;= 1100
+-#define DEFINE_GUIDSTRUCT(g, n) struct __declspec(uuid(g)) n
++#define DEFINE_GUIDSTRUCT(g, n)
+ #define DEFINE_GUIDNAMED(n) __uuidof(struct n)
+ #else // !defined(__cplusplus)
+ #define DEFINE_GUIDSTRUCT(g, n) DEFINE_GUIDEX(n)
+diff --git a/game/shared/baseachievement.cpp b/game/shared/baseachievement.cpp
+index 1b0abf7..50a7af5 100644
+--- a/game/shared/baseachievement.cpp
++++ b/game/shared/baseachievement.cpp
+@@ -17,7 +17,7 @@
+ #endif // CLIENT_DLL
+ 
+ #include &lt;vgui/ISystem.h&gt;
+-#include "../../src/public/vgui_controls/Controls.h"
++#include "../../public/vgui_controls/Controls.h"
+ 
+ // NOTE: This has to be the last file included!
+ #include "tier0/memdbgon.h"
+diff --git a/game/shared/cstrike15/achievements_cs.cpp b/game/shared/cstrike15/achievements_cs.cpp
+index 45c69c7..6ddf0cc 100644
+--- a/game/shared/cstrike15/achievements_cs.cpp
++++ b/game/shared/cstrike15/achievements_cs.cpp
+@@ -39,7 +39,7 @@ IAchievementMgr * CAchievementMgr::GetInstanceInterface()
+ 
+ // [dwenger] Necessary for sorting achievements by award time
+ #include &lt;vgui/ISystem.h&gt;
+-#include "../../src/public/vgui_controls/Controls.h"
++#include "../../public/vgui_controls/Controls.h"
+ 
+ #endif // CLIENT_DLL
+ 
+-- 
+2.21.0.windows.1
