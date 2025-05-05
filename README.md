@@ -15,3 +15,7 @@ Not authorized for commercial use or redistribution.
 Provided “as is,” without warranty of any kind, express or implied.  
 Use at your own risk; you assume all responsibility for compliance with any applicable laws or third-party terms.  
 All trademarks and copyrights remain the property of their respective owners.  
+
+## Uploader notes
+I've never been able to actually get this to compile on Windows or Linux myself, but supposedly many out there have
+been able to do just that. I hope you can compile and learn from playing with the code!
